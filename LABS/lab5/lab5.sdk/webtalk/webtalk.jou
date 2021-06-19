@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# 
+# Start of session at: Sat Jun 19 16:07:06 2021
+# Process ID: 25179
+# Current directory: /home/peter/Documents/PYNQ/LABS/lab5/lab5.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/peter/Documents/PYNQ/LABS/lab5/lab5.sdk/webtalk/webtalk.log
+# Journal file: /home/peter/Documents/PYNQ/LABS/lab5/lab5.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
