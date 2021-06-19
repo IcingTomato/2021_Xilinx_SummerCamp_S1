@@ -1,0 +1,23 @@
+16:45:10 **** Build of configuration Debug for project FIR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/top.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/top.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/top.d" -MT"src/top.o" -o "src/top.o" "../src/top.c"
+Finished building: ../src/top.c
+ 
+Building target: FIR.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_bsp/ps7_cortexa9_0/lib -o "FIR.elf"  ./src/fir.o ./src/top.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: FIR.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size FIR.elf  |tee "FIR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25544	   1160	  22696	  49400	   c0f8	FIR.elf
+Finished building: FIR.elf.size
+ 
+
+16:45:16 Build Finished (took 5s.672ms)
+

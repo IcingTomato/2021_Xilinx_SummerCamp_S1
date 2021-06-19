@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri May 28 09:51:18 2021
+# Process ID: 5700
+# Current directory: C:/Project/Advanced-Embedded-System-Design-Flow-on-Zynq-master/lab6/lab6.runs/system_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_processing_system7_0_0.tcl
+# Log file: C:/Project/Advanced-Embedded-System-Design-Flow-on-Zynq-master/lab6/lab6.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
+# Journal file: C:/Project/Advanced-Embedded-System-Design-Flow-on-Zynq-master/lab6/lab6.runs/system_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_processing_system7_0_0.tcl -notrace

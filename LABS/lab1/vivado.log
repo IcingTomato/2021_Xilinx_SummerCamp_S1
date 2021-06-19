@@ -1,0 +1,297 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 18 21:13:04 2021
+# Process ID: 23955
+# Current directory: /home/peter/Documents/PYNQ/LABS/lab1
+# Command line: vivado
+# Log file: /home/peter/Documents/PYNQ/LABS/lab1/vivado.log
+# Journal file: /home/peter/Documents/PYNQ/LABS/lab1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/peter/Documents/PYNQ/LABS/lab1/lab1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 6189.281 ; gain = 107.301 ; free physical = 1023 ; free virtual = 4271
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab1/lab1.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+save_project_as lab2 /home/peter/Documents/PYNQ/LABS/lab2 -force
+open_bd_design {/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <system> from BD file </home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6310.168 ; gain = 17.836 ; free physical = 445 ; free virtual = 3863
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name switches [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {2} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {sws_2bits}] [get_bd_cells switches]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /switches/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/switches/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins switches/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</switches/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]>
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name buttons [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4} CONFIG.C_ALL_INPUTS {1} CONFIG.GPIO_BOARD_INTERFACE {btns_4bits}] [get_bd_cells buttons]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins buttons/S_AXI] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+connect_bd_net [get_bd_pins buttons/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins buttons/s_axi_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+regenerate_bd_layout
+assign_bd_address [get_bd_addr_segs {buttons/S_AXI/Reg }]
+</buttons/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000 [ 64K ]>
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins switches/GPIO]
+endgroup
+set_property name switches [get_bd_intf_ports GPIO_0]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /buttons/GPIO'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_4bits ( 4 Buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins buttons/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /buttons]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_4bits [get_bd_cells /buttons]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_4bits
+INFO: [board_rule 100-100] connect_bd_intf_net /btns_4bits /buttons/GPIO
+set_property name buttons [get_bd_intf_ports btns_4bits]
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+save_bd_design
+Wrote  : </home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/synth/system.hwdef
+[Fri Jun 18 21:42:55 2021] Launched system_processing_system7_0_0_synth_1, system_axi_gpio_0_0_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1, system_axi_gpio_0_1_synth_1, system_rst_ps7_0_100M_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_xbar_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_auto_pc_0_synth_1/runme.log
+system_axi_gpio_0_1_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_axi_gpio_0_1_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+[Fri Jun 18 21:42:55 2021] Launched synth_1...
+Run output will be captured here: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 6765.352 ; gain = 142.156 ; free physical = 161 ; free virtual = 3593
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.dcp' for cell 'system_i/buttons'
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/switches'
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/buttons/U0'
+Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [/home/peter/Documents/PYNQ/LABS/lab2/lab2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/buttons/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 7045.715 ; gain = 256.352 ; free physical = 860 ; free virtual = 3649
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.24 . Memory (MB): peak = 7394.508 ; gain = 1.961 ; free physical = 329 ; free virtual = 3197
+[Fri Jun 18 21:52:47 2021] Launched impl_1...
+Run output will be captured here: /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/impl_1/runme.log
+file copy -force /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/impl_1/system_wrapper.sysdef /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk
+file copy -force /home/peter/Documents/PYNQ/LABS/lab2/lab2.runs/impl_1/system_wrapper.sysdef /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab2/lab2.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+save_project_as lab3 /home/peter/Documents/PYNQ/LABS/lab3/lab3 -force
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/peter/Documents/PYNQ/LABS/lab3/led_ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/peter/Documents/PYNQ/LABS/lab3/led_ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:led_ip:1.0 led_ip_0
+endgroup
+set_property -dict [list CONFIG.LED_WIDTH {4}] [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/led_ip_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins led_ip_0/S_AXI]
+</led_ip_0/S_AXI/S_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_cells led_ip_0]
+make_bd_intf_pins_external  [get_bd_cells led_ip_0]
+endgroup
+set_property name LED [get_bd_ports LED_0]
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+regenerate_bd_layout
+add_files -fileset constrs_1 -norecurse /home/peter/Documents/PYNQ/LAB/source/lab3/lab3_pynq_z2.xdc
+generate_target all [get_files  /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_4bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_4bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_4bits'. If desired, please change the name of this port /buttons manually.
+Wrote  : </home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/synth/system.hwdef
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_led_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 2 {system_xbar_0_synth_1 system_led_ip_0_0_synth_1 system_auto_pc_0_synth_1}
+[Fri Jun 18 22:37:41 2021] Launched system_xbar_0_synth_1, system_led_ip_0_0_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_xbar_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/system_xbar_0_synth_1/runme.log
+system_led_ip_0_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/system_led_ip_0_0_synth_1/runme.log
+system_auto_pc_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bd] -directory /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.ip_user_files/sim_scripts -ip_user_files_dir /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.ip_user_files -ipstatic_source_dir /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/modelsim} {questa=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/questa} {ies=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/ies} {xcelium=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/xcelium} {vcs=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/vcs} {riviera=/home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 18 22:40:45 2021] Launched system_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+system_auto_pc_0_synth_1: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/system_auto_pc_0_synth_1/runme.log
+synth_1: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/synth_1/runme.log
+[Fri Jun 18 22:40:46 2021] Launched impl_1...
+Run output will be captured here: /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.36 . Memory (MB): peak = 7679.441 ; gain = 0.000 ; free physical = 1005 ; free virtual = 2552
+Restored from archive | CPU: 0.350000 secs | Memory: 2.103165 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.36 . Memory (MB): peak = 7679.441 ; gain = 0.000 ; free physical = 1005 ; free virtual = 2552
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+file mkdir /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk
+file copy -force /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.runs/impl_1/system_wrapper.sysdef /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk/system_wrapper.hdf
+
+launch_sdk -workspace /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk -hwspec /home/peter/Documents/PYNQ/LABS/lab3/lab3/lab3.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 19 01:14:18 2021...

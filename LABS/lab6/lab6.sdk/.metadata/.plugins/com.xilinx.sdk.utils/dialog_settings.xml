@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/lab6_sd/Debug" key="bootgen_files_selection"/>
+	<item value="/home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/zynq_fsbl/Debug" key="zynq_flash_files_selection"/>
+	<item value="/home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/lab6_sd/Debug" key="last_stored_selection"/>
+</section>

@@ -1,0 +1,33 @@
+14:39:43 **** Auto Build of configuration Debug for project lab6_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg.d" -MT"src/devcfg.o" -o "src/devcfg.o" "../src/devcfg.c"
+Finished building: ../src/devcfg.c
+ 
+Building file: ../src/lab6_sd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab6_sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab6_sd.d" -MT"src/lab6_sd.o" -o "src/lab6_sd.o" "../src/lab6_sd.c"
+Finished building: ../src/lab6_sd.c
+ 
+Building file: ../src/load_elf.s
+Invoking: ARM v7 gcc assembler
+arm-none-eabi-gcc -c  -o"src/load_elf.o" "../src/load_elf.s"
+Finished building: ../src/load_elf.s
+ 
+Building target: lab6_sd.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/ps7_cortexa9_0/lib -o "lab6_sd.elf"  ./src/devcfg.o ./src/lab6_sd.o ./src/load_elf.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab6_sd.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab6_sd.elf  |tee "lab6_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57996	   2240	  24576	  84812	  14b4c	lab6_sd.elf
+Finished building: lab6_sd.elf.size
+ 
+
+14:39:45 Build Finished (took 1s.607ms)
+

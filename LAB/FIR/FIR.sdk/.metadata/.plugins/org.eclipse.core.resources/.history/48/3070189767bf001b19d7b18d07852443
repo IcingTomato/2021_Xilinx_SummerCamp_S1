@@ -1,0 +1,92 @@
+/*
+ * top.c
+ *
+ *  Created on: May 28, 2021
+ *      Author: kaimins
+ */
+
+#include <stdio.h>
+#include <xil_io.h>
+#include <sleep.h>
+#include <xil_printf.h>
+#include <xparameters.h>
+#include "xuartps.h"
+#include "fir.h"
+#include "xfir_fir_io.h"
+
+//For timer***********************************************
+#include "xscutimer.h"  // if PS Timer is used
+
+#define TIMER_DEVICE_ID	XPAR_SCUTIMER_DEVICE_ID
+#define TIMER_LOAD_VALUE 0xFFFFFFFF
+
+XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
+//********************************************************
+
+void fir_software (short *y, short x);
+
+typedef short		Xint16;
+typedef long		Xint32;
+
+void filter_hw_accel_input(short * Sample_L_out, short Sample_L_in)
+{
+
+//		xil_printf("input sample: %d\r\n",Sample_L_in);
+		Xil_Out32(XPAR_FIR_LEFT_BASEADDR+XFIR_FIR_IO_ADDR_X_DATA, Sample_L_in); // send left channel sample
+		Xil_Out32(XPAR_FIR_LEFT_BASEADDR+XFIR_FIR_IO_ADDR_AP_CTRL, 0x1); // pulse ap_start left channel
+		Xil_Out32(XPAR_FIR_LEFT_BASEADDR+XFIR_FIR_IO_ADDR_AP_CTRL, 0x0);
+		while(1){
+			if(Xil_In32(XPAR_FIR_LEFT_BASEADDR+XFIR_FIR_IO_ADDR_Y_CTRL))
+				break;
+			else
+				continue;
+		}
+		*Sample_L_out = Xil_In32(XPAR_FIR_LEFT_BASEADDR+XFIR_FIR_IO_ADDR_Y_DATA);
+//		xil_printf("output sample: %d\r\n",*Sample_L_out);
+}
+
+int main(void)
+{
+	short signal_sw, output_sw;
+	short signal_hw, output_hw;
+
+	int Status;
+
+	int i;
+	for (i=0;i<SAMPLES;i++) {
+	  if(i==0)
+	  {
+		  signal_sw = 0x8000;
+		  signal_hw = 0x8000;
+	  }
+	  else
+	  {
+		  signal_sw = 0;
+		  signal_hw = 0;
+	  }
+
+	  // PS Timer related definitions
+	  volatile u32 CntValue1;
+	  XScuTimer_Config *ConfigPtr;
+	  XScuTimer *TimerInstancePtr = &Timer;
+
+	  // Initialize timer counter
+	  ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+
+	  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr, ConfigPtr->BaseAddr);
+	  if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	  }
+
+	  fir_software(&output_sw,signal_sw);
+
+	  filter_hw_accel_input(&output_hw,signal_hw);
+
+//	  #ifdef SW_PROFILE
+//		  fir_software(&output,signal);
+//	  #else
+//		  filter_hw_accel_input(&output,signal);
+//	  #endif
+	}
+	return 0;
+}

@@ -1,0 +1,24 @@
+13:57:45 INFO  : Registering command handlers for SDK TCF services
+13:57:47 INFO  : Launching XSCT server: xsct -n -interactive /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/temp_xsdb_launch_script.tcl
+13:57:50 INFO  : XSCT server has started successfully.
+13:57:50 INFO  : Successfully done setting XSCT server connection channel  
+13:57:50 INFO  : Successfully done setting SDK workspace  
+13:57:50 INFO  : Processing command line option -hwspec /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/system_wrapper.hdf.
+13:59:08 INFO  : Refreshed build settings on project hello_world
+14:10:02 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/peter/Documents/PYNQ/LABS/lab6/image/BOOT.bin
+14:10:02 INFO  : Creating new bif file /home/peter/Documents/PYNQ/LABS/lab6/image/output.bif
+14:10:05 INFO  : Bootgen command execution is done.
+14:18:04 INFO  : Inferring section assignments and sizes from elf file: /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/hello_world/Debug/hello_world.elf
+14:18:28 INFO  : Successfully generated /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/hello_world/src/lscript.ld.
+14:18:28 INFO  : Applying linker script to all configurations of project hello_world.
+14:18:28 INFO  : Setting rebuild state to true for all configurations of project hello_world.
+14:38:21 INFO  : Registering command handlers for SDK TCF services
+14:38:23 INFO  : Launching XSCT server: xsct -n -interactive /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/temp_xsdb_launch_script.tcl
+14:38:25 INFO  : XSCT server has started successfully.
+14:38:25 INFO  : Successfully done setting XSCT server connection channel  
+14:38:25 INFO  : Successfully done setting SDK workspace  
+14:38:25 INFO  : Processing command line option -hwspec /home/peter/Documents/PYNQ/LABS/lab6/lab6.sdk/system_wrapper.hdf.
+14:38:25 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+14:52:07 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/peter/Documents/PYNQ/LABS/lab6/SD_image/BOOT.bin
+14:52:07 INFO  : Creating new bif file /home/peter/Documents/PYNQ/LABS/lab6/SD_image/output.bif
+14:52:09 INFO  : Bootgen command execution is done.
